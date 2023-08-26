@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-scroll="0">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Promotions - Liftdrop Superapp(demo)</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+   <link href="/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+   <link href="/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+   <link href="/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="header scroll" id="header" style=" padding: 12px 24px;">
+        <div style="display: flex; gap: 12px; align-items: center;">
+            <button style="height: 48px; width: 48px; margin-left: -8px;"  onclick="history.back()"><img src="/images/arrow-left.svg" alt=""></button>
+            <h2 style="font-weight: 500; font-size: 24px;">Promotions</h2>
+        </div>
+    </header>
+
+    <section style="border-bottom: 8px solid #f4f4f4; padding-bottom: 16px;">
+        <div style="margin: 90px 24px 36px; padding: 24px; display: flex; gap: 16px; align-items: center; background-color: rgba(0, 102, 255, 0.125); border-radius: 8px;">
+            <div style="background-color: #06f;padding: 12px;border-radius: 50%;"><img style="margin: 0; height: 24px;" src="/images/discount-alt.svg" alt=""></div>
+            <div style="display: grid; gap: 6px; align-items: center;">
+            <p style="font-weight: 500; margin-bottom: 6px;">Get R50 off</p>
+            <p style="font-size: 14px;">Invite friend to Liftdrop</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section style="margin-top: 24px; padding: 24px; display: grid; gap: 24px; border-bottom: 8px solid #f4f4f4; padding-bottom: 48px;">
+        <h4 style="font-size: 18px; font-weight: 500;margin-bottom: 24px;">Available promos</h4>
+        <div style="display: flex; align-items: center; gap:24px; border-bottom: 1px solid #f0f0f0; padding-bottom: 18px;">
+            <img style="margin: 0; height: 34px;" src="/images/discount.svg" alt="">
+            <div style="display: grid; align-items: center; gap: 6px;">
+                <p style="font-weight: 500;">50% off (up to R125) food</p>
+                <p style="font-size: 14px;">Ends 15 Sept 2022 &#8226; R175 min order</p>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap:24px; border-bottom: 1px solid #f0f0f0; padding-bottom: 18px;">
+            <img style="margin: 0; height: 34px;" src="/images/discount.svg" alt="">
+            <div style="display: grid; align-items: center; gap: 6px;">
+                <p style="font-weight: 500;">15% off (up to R50) rides</p>
+                <p style="font-size: 14px;">Ends 30 Sept 2022</p>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        document.addEventListener('scroll', () => {
+            document.documentElement.dataset.scroll = window.scrollY;
+        });
+    </script>
+
+</body>
+</html>

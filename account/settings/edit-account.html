@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-scroll="0">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Liftdrop Superapp(demo) - Edit account</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+   <link href="/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+   <link href="/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+   <link href="/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="header scroll" id="header" style=" padding: 12px 24px;">
+        <div style="display: flex; gap: 12px; align-items: center;">
+            <button style="height: 48px; width: 48px; margin-left: -8px;"  onclick="history.back()"><img src="/images/arrow-left.svg" alt=""></button>
+            <h2 style="font-weight: 500; font-size: 24px;">Edit Account</h2>
+        </div>
+    </header>
+
+    <section>
+        <div style="margin-top: 72px; padding: 24px; display: grid; gap: 12px; align-items: center;">
+            <img style="background-color: #f4f4f4; padding: 16px; border-radius: 50%; margin: 0; height: 90px;" src="/images/account.svg" alt="">
+        </div>
+
+        <div style="padding: 48px 24px; display: grid; gap: 60px; height: fit-content;">
+            <div style="display: grid; gap: 16px;">
+                <h3 style="font-weight: 500; margin-bottom: 8px;">Bio</h3>
+                <a style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: grid; gap: 6px;" href="/account/payment"><p style="font-size: 12px;">First Name</p><p>John</p></a>
+                <a style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: grid; gap: 6px;" href="/account/payment"><p style="font-size: 12px;">Last Name</p><p>Doe</p></a>
+            </div>
+
+            <div style="display: grid; gap: 16px;">
+                <h3 style="font-weight: 500; margin-bottom: 8px;">Contacts</h3>
+                <a style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: grid; gap: 6px;" href="/account/payment"><p style="font-size: 12px;">Phone number</p><div style="display: flex;align-items: center; gap: 8px;"><img
+                    style="margin: 0;" src="https://flagcdn.com/za.svg"
+                    width="30"
+                    alt="South Africa"><p>+27 12 345 6789</p></div></a>
+                <a style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: grid; gap: 6px;" href="/account/payment"><p style="font-size: 12px;">Email</p><p>johndoe@email.com</p></a>
+            </div>
+
+            <div style="display: grid; gap: 16px;">
+                <h3 style="font-weight: 500; margin-bottom: 8px;">Security</h3>
+                <a style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: grid; gap: 6px;" href="/account/payment"><p style="font-size: 12px;">Password</p><p>&#8226; &#8226; &#8226; &#8226; &#8226; &#8226; &#8226; &#8226;</p></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('scroll', () => {
+            document.documentElement.dataset.scroll = window.scrollY;
+        });
+    </script>
+
+</body>
+</html>

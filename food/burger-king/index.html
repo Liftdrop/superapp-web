@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-scroll="0">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Food - Burger King</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/tabs-scroll.css">
+   <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+   <link href="/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+   <link href="/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+   <link href="/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="/js/tabs-scroll.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <header class="header scroll" id="header" style="padding: 18px 24px;">
+        <div style="display: flex; gap: 12px; align-items: center;">
+            <button style="height: 30px; width: 30px;  background-color: #fff; border-radius: 4px;"  onclick="history.back()"><img src="/images/arrow-left.svg" alt=""></button>
+            <h2 class="restuarant-name">Burger King, The Crossing</h2>
+        </div>
+        <div class="search-container">
+            <form action="/search" method="get" style="text-align: center; background-color: #fff;">
+              <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+              <label class="button searchbutton" for="searchright"><img class="mglass" src="/images/search-brand.svg" alt="" srcset=""></label>
+            </form>
+        </div>
+    </header>
+    <section class="sticky-nav-tabs">
+        <div class="sticky-nav-tabs-container"> 
+            <a class="sticky-nav-tab" href="#tab-1">Picked For You</a> 
+            <a class="sticky-nav-tab" href="#tab-2">WHOPPER&#174;</a>
+            <a class="sticky-nav-tab" href="#tab-3">Sides</a>
+            <a class="sticky-nav-tab" href="#tab-last">King Jr</a>
+            <span class="sticky-nav-tab-slider"></span> 
+        </div>
+    </section>
+
+    <div style="background-image: url('/images/burger\ king\ menu.jpg'); height: 30vh; margin-bottom: 12px; background-repeat: no-repeat, no-repeat;background-size: cover; background-position: center;">
+    </div>
+
+    <section style="margin: 36px 0; padding: 0 24px;">
+        <h4 style="font-size: 24px; font-weight: 600; margin-bottom: 8px;">Burger King&#174;, The Crossing</h4>
+        <div style="display: flex; width: fit-content; align-items: center; gap: 6px; margin-top: 8px; line-height: 1;">
+            <img height="14" width="14" src="/images/star.svg" alt="Rating" style="margin-top: 0;">
+            <p style="font-size: 14px;"> 4.4 &#8226; R0 fee &#8226; 30-45 min &#8226; </p>
+            <img src="/images/liftdrop-pass.svg" alt="">
+        </div>
+    
+    </section>
+
+    <main class="spa-main">
+    <section class="spa-slide" id="tab-1" style="border-top: 8px solid #f4f4f4; padding: 24px;">
+        <h4 style="font-size: 22px; font-weight: 600; padding-bottom: 24px;">Picked For You</h4>
+        <a href="/food/burger-king/whopper" style=" margin-bottom: 24px; display: flex; align-items: flex-start; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight: 500;">Whopper&#174; Meal</h4>
+                <div style="font-size: 14px; display: grid; gap: 6px; align-items: flex-end; margin-top: 8px;">
+                    <p style="line-height: 0.84;">R82,90</p>
+                    <p style="color: #aaa; font-size: 13px;">100% Pure flame-grilled beef topped with juicy tomatoes, fresh lettuce</p>
+                </div>
+            </div>
+            <div style="min-width: 120px; height: 120px; border-radius: 8px; padding: 26px 6px; background-image: url('/images/whopper.webp'); background-size: contain; background-position: center; background-repeat: no-repeat no-repeat;">
+            </div>
+        </a>
+        <a href="/food/burger-king/cheese-bites" style="margin-bottom: 24px; display: flex; align-items: flex-start; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight: 500;">Chilli Cheese Bites 6pc</h4>
+                <div style="font-size: 14px; display: grid; gap: 6px; align-items: flex-end; margin-top: 8px;">
+                    <p>R50,90</p>
+                    <p style="color: #aaa; font-size: 13px;">It's about cheese and fiery-hot jalapenos in a crispy coating</p>
+                    
+                </div>
+            </div>
+            <div style="min-width: 120px; height: 120px; border-radius: 8px; background-image: url('/images/cheese-bites.webp'); background-size: contain; background-position: center; background-repeat: no-repeat no-repeat;">
+            </div>
+        </a>
+        <a href="/food/burger-king/fries" style=" margin-bottom: 24px; display: flex; align-items: flex-start; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight: 500;">BK&#174; Fries</h4>
+                <div style="font-size: 14px; display: flex; gap: 6px; align-items: flex-end; margin-top: 8px;">
+                    <p>R22,90</p>
+                </div>
+            </div>
+            <div style="min-width: 120px; height: 120px; border-radius: 8px; padding: 26px 6px; background-image: url('/images/fries.webp'); background-size: contain; background-position: center; background-repeat: no-repeat no-repeat;">
+            </div>
+        </a>
+        <a href="/food/burger-king/whopper-jr" style="margin-bottom: 24px; display: flex; align-items: flex-start; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight: 500;">Whopper Jr&#174;</h4>
+                <div style="font-size: 14px; display: grid; gap: 6px; align-items: flex-end; margin-top: 8px;">
+                    <p>R67,90</p>
+                    <p class="line-clamp">Freshly flame-grilled beef and the same great ingredients</p>
+                    
+                </div>
+            </div>
+            <div style="min-width: 120px; height: 120px; border-radius: 8px; background-image: url('/images/whopper-jr.webp'); background-size: contain; background-position: center; background-repeat: no-repeat no-repeat;">
+            </div>
+        </a>
+    </section>
+    <section class="spa-slide" id="tab-2" style="padding: 24px;">
+        <h4 style="font-size: 22px; font-weight: 600; padding-bottom: 24px;">WHOPPER&#174;</h4>
+        <a href="/food/burger-king/whopper" style=" margin-bottom: 24px; display: flex; align-items: flex-start; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight: 500;">Whopper&#174; Meal</h4>
+                <div style="font-size: 14px; display: grid; gap: 6px; align-items: flex-end; margin-top: 8px;">
+                    <p>R82,90</p>
+                    <p class="line-clamp">100% Pure flame-grilled beef topped with juicy tomatoes, fresh lettuce</p>
+                </div>
+            </div>
+            <div style="min-width: 120px; height: 120px; border-radius: 8px; padding: 26px 6px; background-image: url('/images/whopper.webp'); background-size: contain; background-position: center; background-repeat: no-repeat no-repeat;">
+            </div>
+        </a>
+    </section>
+    <section class="spa-slide" id="tab-3" style="padding: 24px;">
+        <h4 style="font-size: 22px; font-weight: 600; padding-bottom: 24px;">Sides</h4>
+        <a href="/food/burger-king/cheese-bites" style="margin-bottom: 24px; display: flex; align-items: flex-start; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight: 500;">Chilli Cheese Bites 6pc</h4>
+                <div style="font-size: 14px; display: grid; gap: 6px; align-items: flex-end; margin-top: 8px;">
+                    <p>R50,90</p>
+                    <p class="line-clamp">It's about cheese and fiery-hot jalapenos in a crispy coating</p>
+                    
+                </div>
+            </div>
+            <div style="min-width: 120px; height: 120px; border-radius: 8px; background-image: url('/images/cheese-bites.webp'); background-size: contain; background-position: center; background-repeat: no-repeat no-repeat;">
+            </div>
+        </a>
+        <a href="/food/burger-king/fries" style=" margin-bottom: 24px; display: flex; align-items: flex-start; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight: 500;">BK&#174; Fries</h4>
+                <div style="font-size: 14px; display: flex; gap: 6px; align-items: flex-end; margin-top: 8px;">
+                    <p>R22,90</p>
+                </div>
+            </div>
+            <div style="min-width: 120px; height: 120px; border-radius: 8px; padding: 26px 6px; background-image: url('/images/fries.webp'); background-size: contain; background-position: center; background-repeat: no-repeat no-repeat;">
+            </div>
+        </a>
+    </section>
+    <section class="spa-slide" id="tab-last" style="padding: 24px;">
+        <h4 style="font-size: 22px; font-weight: 600; padding-bottom: 24px;">King Jr</h4>
+        <a href="/food/burger-king/whopper-jr" style="margin-bottom: 24px; display: flex; align-items: flex-start; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight: 500;">Whopper Jr&#174;</h4>
+                <div style="font-size: 14px; display: grid; gap: 6px; align-items: flex-end; margin-top: 8px;">
+                    <p>R67,90</p>
+                    <p class="line-clamp">Freshly flame-grilled beef and the smae great ingredients</p>
+                    
+                </div>
+            </div>
+            <div style="min-width: 120px; height: 120px; border-radius: 8px; background-image: url('/images/whopper-jr.webp'); background-size: contain; background-position: center; background-repeat: no-repeat no-repeat;">
+            </div>
+        </a>
+    </section>
+    </main>
+
+    <div style="height: 24px; width: 100%;"></div>
+    <script>
+        document.addEventListener('scroll', () => {
+            document.documentElement.dataset.scroll = window.scrollY;
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</body>
+</html>

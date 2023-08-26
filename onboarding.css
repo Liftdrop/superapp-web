@@ -1,0 +1,150 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #002050;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: background-color 500ms ease-in-out;
+  }
+  
+  .button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* End General Styles */
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    animation: fadeInContent 500ms ease-in-out;
+    transition: nonr 300ms ease-in-out;
+    transition-property: opacity, visibility;
+    height: 100vh;
+  }
+  
+  .wrapper--has-fade {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  @keyframes fadeInContent {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .slides-area {
+    display: flex;
+    transition: margin 300ms ease-in-out;
+  }
+  
+  .slides-area__slide {
+    width: 100%;
+  }
+  
+  .slide__image {
+    width: 100%;
+    height: 50vh;
+    background-color: #f7f7f7;
+    margin-bottom: 48px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #06f;
+  }
+  
+  .slide__text {
+    padding: 0 24px;
+    text-align: left;
+    color: #002050;
+  }
+  
+  .slide__title {
+    font-size: min(10vw, 24px);
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .slide__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    color: #aaa;
+  }
+  
+  .button-next {
+    background-color: #0066FF;
+    border-radius: 8px;
+    height: 48px;
+    width: fit-content;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-next--fade {
+    opacity: 1;
+    pointer-events: none;
+  }
+  
+  .paginations-area {
+    pointer-events: none;
+  }
+  
+  .paginations-area__item {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #c7c7c7;
+    border-radius: 4px;
+  }
+  
+  .paginations-area__item:not(:last-child) {
+    margin-right: 12px;
+  }
+  
+  .paginations-area__item--current {
+    width: 36px;
+    background-color: #0066FF;
+    animation: activeItem 300ms ease-in-out;
+  }
+  
+  @keyframes activeItem {
+    from {
+      width: 8px;
+      background-color: #aaa;
+    }
+  
+    to {
+      width: 36px;
+      background-color: #0066FF;
+    }
+  }

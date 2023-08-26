@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-scroll="0">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Support - Liftdrop Superapp(demo)</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+   <link href="/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+   <link href="/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+   <link href="/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="header" id="header" style="padding: 16px 24px;">
+        <h2 style="font-weight: 500; font-size: 24px;">Support</h2>
+    </header>
+
+
+    <section style="position: absolute; display: flex; align-items: center; bottom: 0; top: 0;justify-content: center; right: 0; left: 0; margin: auto;">
+        <div style="text-align: center; padding:0 24px;">
+            <img width="300" src="/images/support.jpg" alt="">
+            <h4 style="font-size: 20px; font-weight: 600; margin: 12px 0 24px;">Find chats with support here!</h4>
+            <p style="margin-bottom: 8px;">You can also get help via our</p>
+            <a href="#" style="font-weight: 500; color: #06f;">Help Centre</a>
+        </div>
+    </section>
+
+    <div style="display: flex; height: 60px; padding: 0 24px; justify-content: space-between; background-color: #fff;box-shadow: 0px -2px 12px 0px #0000000f; position: fixed; bottom: 0; left: 0; right:0; font-size: 12px;font-weight: 500; text-align: center; align-items: center; color: #aaa;">
+        <a href="/" style="display: grid; gap: 6px; justify-items: center; height: fit-content; position: relative;">
+            <img src="/images/home.svg" alt="">
+            <p style="color: #0066ff; font-size: 18px; font-weight: 500;position: absolute; bottom: -6px; line-height: 0;">&#8226;</p>
+        </a>
+        <a href="/activity/" style="display: grid; gap: 6px; justify-items: center;height: fit-content;">
+            <img src="/images/activity.svg" alt="">
+        </a>
+        <a href="#" style="display: grid; gap: 6px; justify-items: center;height: fit-content;">
+            <img src="/images/support-full.svg" alt="">
+        </a>
+        <a href="/account/" style="display: grid; gap: 6px; justify-items: center; height: fit-content;">
+            <img src="/images/user.svg" alt="">
+        </a>
+    </div>
+    <script>
+        document.addEventListener('scroll', () => {
+            document.documentElement.dataset.scroll = window.scrollY;
+        });
+    </script>
+</body>
+</html>

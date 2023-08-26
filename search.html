@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liftdrop Superapp(demo)</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+    <link href="/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="header scroll" id="header" style="padding: 16px 24px;display: flex; gap: 16px; align-items: center; flex-direction: row;">
+        <form class="search-block">
+            <div style="background-color: #f4f4f4; border-radius: 6px 0 0 6px; height: 48px; padding: 0 24px;align-items: center; display: flex;">
+                <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#aaa"><path d="M16.57,16.15A9,9,0,1,0,15,17.46h0l6.25,6.25,1.42-1.42Zm-3-.14a7.07,7.07,0,1,1,1.56-1.28A6.88,6.88,0,0,1,13.59,16Z"/></svg>
+            </div>
+            <input type="search" name="search" style="height: 48px; border: none; font-size: 16px; border-radius: 0 6px 6px 0; background-color: #f4f4f4; width: 100%; outline: none; padding-right: 24px;" placeholder="Search the Liftdrop app">
+        </form>
+    </header>
+
+    <section style="margin-top: 102px;">
+        <div style="background-color: #06f; color: #fff; padding: 0 24px; height: 160px; display: grid;
+        grid-template-columns: 60% 1fr; margin: 0 24px; border-radius: 8px;">
+            <div>
+                <h3 style="padding: 24px 0 16px; font-size: 24px; font-weight: 500; line-height: 1.1;">Free delivery<br>today only</h3>
+                <button style="background-color: #002050; height: 28px; width: 96px;border-radius: 4px; font: inherit; font-size: 12px; ">Order now</button>
+            </div>
+            <div style="display: flex;
+            height: fit-content;
+            align-self: end;
+            margin-bottom: -5.70px;">
+                <img src="images/snacks.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section style="margin: 36px 0; text-align: center;">
+        <div style="display: flex; justify-content: space-between; padding: 0 24px;">
+            <a style="border-radius: 12px; padding:6px 3px; border: 3px solid #f7f7f7;background-color: #f7f7f7;" href="/ride">
+                <div style=" width: 84px; height: 72px; border-radius: 50%; padding: 12px;"><img src="/images/Car-T.png" alt=""></div>
+                <p style="font-size: 18px; font-weight: 500;">Ride</p>
+            </a>
+            <a style="border-radius: 12px; padding:6px 3px; border: 3px solid #f7f7f7; background-color: #f7f7f7;" href="/food">
+                <div style="width: 84px; height: 72px; padding: 14px 12px;"><img src="/images/Scooter-T.png" alt=""></div>
+                <p style="font-size: 18px; font-weight: 500;">Food</p>
+            </a>
+            <a style="border-radius: 12px; padding:6px 3px; border: 3px solid #f7f7f7; background-color: #f7f7f7;" href="/send">
+                <div style=" width: 84px; height: 72px; border-radius: 8px;padding: 10px 14px;"><img src="/images/Small.png" alt=""></div>
+                <p style="font-size: 18px; font-weight: 500;">Send</p>
+            </a>
+        </div>
+    
+    </section>
+
+    <section style="border-top: 8px solid #f7f7f7;padding-top: 48px;">
+        <a href="/food" style="display: flex; justify-content: space-between; padding: 0 24px; align-items: flex-end;">
+            <h4 style="font-size: 20px; font-weight: 500;">Foodies served</h4>
+            <p style="color: #06f; font-weight: 500; font-size: 14px;">See all</p>
+        </a>
+
+
+        <a href="/food/mcdonalds" style="margin: 24px 24px 48px 24px; display: block; padding: 3px; box-shadow: 0px 4px 12px #f4f4f4; padding-bottom: 24px; border-radius: 12px; position: relative;">
+            <div style="background-color: #f7f7f7; padding: 4px 6px; border-radius: 3px; font-size: 12px; font-weight: 500; position: absolute; right: 12px; top: 12px; display: flex; gap: 3px; align-items:flex-end;"><img height="13" width="13" src="/images/star.svg" alt=""><p style="line-height: 1;">4,6</p></div>
+            
+            <div style="background-image: url('/images/mcdonalds.jpg'); height: 160px; border-radius: 9px 9px 0 0; background-repeat: no-repeat, no-repeat;background-size: cover;
+            background-position: center;"></div>
+            <div style="display: flex; justify-content: space-between; align-items: center;margin-top: 24px;">
+                <div>
+                    <h4 style="font-weight: 500;padding: 0 12px;">McDonald's&#174;, The Crossing</h4>
+                    <div style="display: flex; width: fit-content; align-items: flex-end; gap: 6px; margin-top: 4px; padding: 0 12px;">
+                        <img src="/images/liftdrop-pass.svg" alt="">
+                        <p style="font-size: 14px; padding-top: 3px; line-height: 1;">R0 fee &#8226; 30-45 min</p>
+                    </div>
+                </div>
+                <img height="24" width="24" style="margin-right: 24px;" src="/images/heart-full.svg" alt="">
+            </div>
+        </a>
+
+        <a href="/food/kfc" style="margin: 48px 24px; display: block; padding: 3px; box-shadow: 0px 4px 12px #f4f4f4;  padding-bottom: 24px; border-radius: 12px; position: relative;">
+            <div style="background-color: #f7f7f7; padding: 4px 6px; border-radius: 3px; font-size: 12px;font-weight: 500; position: absolute; right: 12px; top: 12px; display: flex; gap: 3px; align-items:flex-end;"><img height="13" width="13" src="/images/star.svg" alt=""><p style="line-height: 1;">4,3</p></div>
+            
+            <div style="background-image: url('/images/kfc-menu.jpg'); height: 160px; border-radius: 9px 9px 0 0; background-repeat: no-repeat, no-repeat;background-size: cover;
+            background-position: center;"></div>
+            <div style="display: flex; justify-content: space-between; align-items: center;margin-top: 24px;">
+                <div>
+                    <h4 style="font-weight: 500;padding: 0 12px;">KFC&#174;, The Crossing</h4>
+                    <div style="display: flex; width: fit-content; align-items: flex-end; gap: 6px; margin-top: 4px; padding: 0 12px;">
+                        <img src="/images/liftdrop-pass.svg" alt="">
+                        <p style="font-size: 14px; padding-top: 3px; line-height: 1;">R0 fee &#8226; 30-45 min</p>
+                    </div>
+                </div>
+                <img height="24" width="24" style="margin-right: 24px;" src="/images/heart.svg" alt="">
+            </div>
+        </a>
+
+        <a href="/food/burger-king" style="margin: 48px 24px; display: block; padding: 3px; box-shadow: 0px 4px 12px #f4f4f4;  padding-bottom: 24px; border-radius: 12px; position: relative;">
+            <div style="background-color: #f7f7f7; padding: 4px 6px; border-radius: 3px; font-size: 12px;font-weight: 500; position: absolute; right: 12px; top: 12px; display: flex; gap: 3px; align-items:flex-end;"><img height="13" width="13" src="/images/star.svg" alt=""><p style="line-height: 1;">4,4</p></div>
+
+            <div style="background-image: url('/images/burger\ king\ menu.jpg'); height: 160px; border-radius: 9px 9px 0 0; background-repeat: no-repeat, no-repeat;background-size: cover;
+            background-position: center;"></div>
+            <div style="display: flex; justify-content: space-between; align-items: center;margin-top: 24px;">
+                <div>
+                    <h4 style="font-weight: 500;padding: 0 12px;">Burger King&#174;, The Crossing</h4>
+                    <div style="display: flex; width: fit-content; align-items: flex-end; gap: 6px; margin-top: 4px; padding: 0 12px;">
+                        <img src="/images/liftdrop-pass.svg" alt="">
+                        <p style="font-size: 14px; padding-top: 3px; line-height: 1;">R0 fee &#8226; 30-45 min</p>
+                    </div>
+                </div>
+                <img height="24" width="24" style="margin-right: 24px;" src="/images/heart.svg" alt="">
+            </div>
+        </a>
+
+        <div style="height: 96px; width: 100%;"></div>
+    </section>
+
+
+
+    <div style="display: flex; height: 60px; padding: 0 24px; justify-content: space-between; background-color: #fff;box-shadow: 0px -3px 8px 0px #0000000f; position: fixed; bottom: 0; left: 0; right:0; font-size: 12px;font-weight: 500; text-align: center; align-items: center; color: #002050;">
+        <a href="/" style="display: grid; gap: 6px; justify-items: center; height: fit-content;">
+            <img src="/images/home-line.svg" alt="">
+        </a>
+        <a href="#" style="display: grid; gap: 6px; justify-items: center;height: fit-content;">
+            <img style="filter: invert(35%) sepia(67%) saturate(6939%) hue-rotate(211deg) brightness(102%) contrast(108%);" src="/images/search-line.svg" alt="">
+        </a>
+        <a href="/activity/" style="display: grid; gap: 6px; justify-items: center;height: fit-content;">
+            <img src="/images/activity-line.svg" alt="">
+        </a>
+        <a href="/support" style="display: grid; gap: 6px; justify-items: center;height: fit-content;">
+            <img src="/images/chat-line.svg" alt="">
+        </a>
+        <a href="/account/" style="display: grid; gap: 6px; justify-items: center; height: fit-content;border: 1.5px solid #002050; border-radius: 50%; padding: 2px; width: 22.5px;">
+            <img src="/images/account.svg" alt="">
+        </a>
+    </div>
+    <script>
+        document.addEventListener('scroll', () => {
+            document.documentElement.dataset.scroll = window.scrollY;
+        });
+    </script>
+
+</body>
+</html>

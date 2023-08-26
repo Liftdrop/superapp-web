@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Liftdrop Superapp(demo) - Ride</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+   <link href="/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+   <link href="/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+   <link href="/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body style="height: 100%;">
+
+    <header class="header scroll" id="header" style="background-color: #fff; position: fixed; top: 16px; left: 24px; width: 36px; height: 36px;right: auto; border-radius: 8px; display: flex;align-items: center;justify-content: center;">
+        <button style="height: 36px; min-width: 36px;" onclick="location.href='/'"><img  src="/images/arrow-left.svg" alt=""></button>
+    </header>
+
+    <section style="background-image: url('/images/google.png'); background-attachment: fixed; min-height: 50vh; background-size: 60px; background-position: 24px 45vh;
+    background-repeat: no-repeat; background-color: #f7f7f7;padding: 24px;">
+    </section>
+
+    <section style="padding: 0 24px; margin-top: 36px;border-radius: 8px 8px 0 0;">
+        
+        <form class="search-block" style="border-radius: 6px;">
+            <div style="background-color: #f7f7f7; border-radius: 6px 0 0 6px; height: 54px; padding: 0 24px;align-items: center; display: flex;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:new 0 0 513.749 513.749;" xml:space="preserve" width="22" height="22" fill="#002050">
+                    <g>
+                        <path d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"/>
+                    </g>
+                </svg>
+            </div>
+            <input type="search" name="search" style="height: 54px; border: none; font-size: 16px; border-radius: 0 6px 6px 0; background-color: #f7f7f7; width: 100%; outline: none; padding-right: 24px;" placeholder="Where to?">
+        </form>
+
+    </section>
+
+    <section>
+
+        <div style="padding: 36px 24px 12px; display: grid; gap: 60px; height: fit-content;">
+            <div style="display: grid; gap: 16px;">
+                <div style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: flex; gap: 16px; ">
+                    <div style="background-color: #06f; border-radius: 50%; padding: 8px; height: fit-content; align-self: center;">
+                    <img src="/images/Places.svg" alt="">
+                    </div>
+                    <div>
+                    <a style="display: grid; gap: 6px;" href="#"><p>Mall</p><p style="font-size: 14px;color: #aaa;">123 Mall Ave, 456</p></a>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: flex; gap: 16px; ">
+                    <div style="background-color: #06f; border-radius: 50%; padding: 8px; height: fit-content; align-self: center;">
+                    <img src="/images/Places.svg" alt="">
+                    </div>
+                    <div>
+                    <a style="display: grid; gap: 6px;" href="#"><p>Residence</p><p style="font-size: 14px;color: #aaa;">123 Estate Street, 456</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 24px; display: grid; gap: 60px; height: fit-content; padding-bottom: 96px;">
+            <div style="display: grid; gap: 16px;">
+                <h3 style="font-weight: 500; margin-bottom: 8px; margin-left: 16px;">Saved places</h3>
+                <div style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: flex; gap: 16px; ">
+                    <div style="background-color: #f4f4f4; border-radius: 50%; padding: 8px; height: fit-content;
+                    align-self: center;">
+                    <img src="/images/home-alt.svg" alt="">
+                    </div>
+                    <div>
+                    <a style="display: grid; gap: 6px;" href="#"><p>Home</p><p style="font-size: 14px;color: #aaa;">123 Home Ave</p></a>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px solid #f4f4f4;padding: 8px 16px 20px; display: flex; gap: 16px; ">
+                    <div style="background-color: #f4f4f4; border-radius: 50%; padding: 8px; height: fit-content; align-self: center;">
+                    <img src="/images/work.svg" alt="">
+                    </div>
+                    <div>
+                    <a style="display: grid; gap: 6px;" href="#"><p>Work</p><p style="font-size: 14px;color: #aaa;">123 Work Street</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div style="display: flex; height: 60px; padding: 0 24px; justify-content: space-around; background-color: #fff;box-shadow: 0px -3px 8px 0px #0000000f; position: fixed; bottom: 0; left: 0; right:0; font-size: 12px;font-weight: 500; text-align: center; align-items: center; color: #aaa;">
+        <a href="#" style="display: grid; gap: 6px; justify-items: center; height: fit-content;">
+            <img src="/images/car-alt.svg" alt="">
+        </a>
+        <a href="/send" style="display: grid; gap: 6px; justify-items: center;height: fit-content;">
+            <img src="/images/box.svg" alt="">
+        </a>
+    </div>
+
+</body>
+</html>
